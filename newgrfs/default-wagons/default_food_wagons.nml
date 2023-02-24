@@ -1,0 +1,68 @@
+grf {
+  grfid: "\01\16M\00";
+  name: string(STR_GRF_NAME);
+  desc: string(STR_GRF_DESC);
+  url: string(STR_GRF_URL);
+  version: 1;
+  min_compatible_version: 0;
+
+  param 0 {
+    hasBugFix {
+      name: string(STR_PARAM_NAME_BUGFIX);
+      desc: string(STR_PARAM_DESC_BUGFIX);
+      type: bool;
+      bit: 1;
+      def_value: 1;
+    }
+  }
+}
+
+if (climate != CLIMATE_TOYLAND) {
+  if (hasBugFix) {
+    if (climate == CLIMATE_TEMPERATE) {
+      item (FEAT_TRAINS, food0, 38) {
+        property {
+          climates_available: ALL_CLIMATES;
+          default_cargo_type: 0x0B;
+        }
+      }
+
+      item (FEAT_TRAINS, food1, 68) {
+        property {
+          climates_available: ALL_CLIMATES;
+          default_cargo_type: 0x0B;
+        }
+      }
+
+      item (FEAT_TRAINS, food2, 100) {
+        property {
+          climates_available: ALL_CLIMATES;
+          default_cargo_type: 0x0B;
+        }
+      }
+
+      item (FEAT_TRAINS, fruit0, 42) {
+        property {
+          climates_available: ALL_CLIMATES;
+          default_cargo_type: 0x0E;
+        }
+      }
+
+      item (FEAT_TRAINS, fruit1, 72) {
+        property {
+          climates_available: ALL_CLIMATES;
+          default_cargo_type: 0x0E;
+        }
+      }
+
+      item (FEAT_TRAINS, fruit2, 104) {
+        property {
+          climates_available: ALL_CLIMATES;
+          default_cargo_type: 0x0E;
+        }
+      }
+    } else if (climate == CLIMATE_ARCTIC) {
+    } else {
+    }
+  }
+}
