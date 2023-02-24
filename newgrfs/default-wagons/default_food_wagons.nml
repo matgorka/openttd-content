@@ -61,8 +61,68 @@ if (climate != CLIMATE_TOYLAND) {
           default_cargo_type: 0x0E;
         }
       }
-    } else if (climate == CLIMATE_ARCTIC) {
     } else {
+      if (climate == CLIMATE_ARCTIC) {
+        item (FEAT_TRAINS, rail_coal, 29) {
+          property {
+            refittable_cargo_classes: bitmask(CC_BULK);
+            cargo_disallow_refit:     [ 0x06 ];
+          }
+        }
+
+        item (FEAT_TRAINS, monorail_coal, 59) {
+          property {
+            refittable_cargo_classes: bitmask(CC_BULK);
+            cargo_disallow_refit:     [ 0x06 ];
+          }
+        }
+
+        item (FEAT_TRAINS, maglev_coal, 91) {
+          property {
+            refittable_cargo_classes: bitmask(CC_BULK);
+            cargo_disallow_refit:     [ 0x06 ];
+          }
+        }
+      } else {
+        item (FEAT_TRAINS, rail_copper, 40) {
+          property {
+            refittable_cargo_classes: bitmask(CC_BULK);
+            cargo_disallow_refit:     [ 0x06 ];
+          }
+        }
+
+        item (FEAT_TRAINS, monorail_copper, 70) {
+          property {
+            refittable_cargo_classes: bitmask(CC_BULK);
+            cargo_disallow_refit:     [ 0x06 ];
+          }
+        }
+
+        item (FEAT_TRAINS, maglev_copper, 102) {
+          property {
+            refittable_cargo_classes: bitmask(CC_BULK);
+            cargo_disallow_refit:     [ 0x06 ];
+          }
+        }
+      }
+
+      item (FEAT_TRAINS, rail_grain, 33) {
+        property {
+          default_cargo_type: 0x06;
+        }
+      }
+
+      item (FEAT_TRAINS, monorail_grain, 63) {
+        property {
+          default_cargo_type: 0x06;
+        }
+      }
+
+      item (FEAT_TRAINS, maglev_grain, 95) {
+        property {
+          default_cargo_type: 0x06;
+        }
+      }
     }
 
     item (FEAT_TRAINS, x27, 27) {}
