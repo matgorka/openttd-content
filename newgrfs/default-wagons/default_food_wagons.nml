@@ -20,42 +20,42 @@ grf {
 if (climate != CLIMATE_TOYLAND) {
   if (hasBugFix) {
     if (climate == CLIMATE_TEMPERATE) {
-      item (FEAT_TRAINS, food0, 38) {
+      item (FEAT_TRAINS, rail_food, 38) {
         property {
           climates_available: ALL_CLIMATES;
           default_cargo_type: 0x0B;
         }
       }
 
-      item (FEAT_TRAINS, food1, 68) {
+      item (FEAT_TRAINS, monorail_food, 68) {
         property {
           climates_available: ALL_CLIMATES;
           default_cargo_type: 0x0B;
         }
       }
 
-      item (FEAT_TRAINS, food2, 100) {
+      item (FEAT_TRAINS, maglev_food, 100) {
         property {
           climates_available: ALL_CLIMATES;
           default_cargo_type: 0x0B;
         }
       }
 
-      item (FEAT_TRAINS, fruit0, 42) {
+      item (FEAT_TRAINS, rail_fruit, 42) {
         property {
           climates_available: ALL_CLIMATES;
           default_cargo_type: 0x0E;
         }
       }
 
-      item (FEAT_TRAINS, fruit1, 72) {
+      item (FEAT_TRAINS, monorail_fruit, 72) {
         property {
           climates_available: ALL_CLIMATES;
           default_cargo_type: 0x0E;
         }
       }
 
-      item (FEAT_TRAINS, fruit2, 104) {
+      item (FEAT_TRAINS, maglev_fruit, 104) {
         property {
           climates_available: ALL_CLIMATES;
           default_cargo_type: 0x0E;
@@ -64,5 +64,97 @@ if (climate != CLIMATE_TOYLAND) {
     } else if (climate == CLIMATE_ARCTIC) {
     } else {
     }
+
+    item (FEAT_TRAINS, x27, 27) {}
+    item (FEAT_TRAINS, x28, 28) {}
+    item (FEAT_TRAINS, x29, 29) {}
+    item (FEAT_TRAINS, x30, 30) {}
+    item (FEAT_TRAINS, x31, 31) {}
+    item (FEAT_TRAINS, x32, 32) {}
+    item (FEAT_TRAINS, x33, 33) {}
+    item (FEAT_TRAINS, x34, 34) {}
+    item (FEAT_TRAINS, x35, 35) {}
+    item (FEAT_TRAINS, x36, 36) {}
+    item (FEAT_TRAINS, x37, 37) {}
+    item (FEAT_TRAINS, x38, 38) {}
+    item (FEAT_TRAINS, x39, 39) {}
+    item (FEAT_TRAINS, x40, 40) {}
+    item (FEAT_TRAINS, x41, 41) {}
+    item (FEAT_TRAINS, x42, 42) {}
+    item (FEAT_TRAINS, x43, 43) {}
+    item (FEAT_TRAINS, x44, 44) {}
+    item (FEAT_TRAINS, x45, 45) {}
+    item (FEAT_TRAINS, x46, 46) {}
+    item (FEAT_TRAINS, x47, 47) {}
+    item (FEAT_TRAINS, x48, 48) {}
+    item (FEAT_TRAINS, x49, 49) {}
+    item (FEAT_TRAINS, x50, 50) {}
+    item (FEAT_TRAINS, x51, 51) {}
+    item (FEAT_TRAINS, x52, 52) {}
+    item (FEAT_TRAINS, x53, 53) {}
+    item (FEAT_TRAINS, x57, 57) {}
+    item (FEAT_TRAINS, x58, 58) {}
+    item (FEAT_TRAINS, x59, 59) {}
+    item (FEAT_TRAINS, x60, 60) {}
+    item (FEAT_TRAINS, x61, 61) {}
+    item (FEAT_TRAINS, x62, 62) {}
+    item (FEAT_TRAINS, x63, 63) {}
+    item (FEAT_TRAINS, x64, 64) {}
+    item (FEAT_TRAINS, x65, 65) {}
+    item (FEAT_TRAINS, x66, 66) {}
+    item (FEAT_TRAINS, x67, 67) {}
+    item (FEAT_TRAINS, x68, 68) {}
+    item (FEAT_TRAINS, x69, 69) {}
+    item (FEAT_TRAINS, x70, 70) {}
+    item (FEAT_TRAINS, x71, 71) {}
+    item (FEAT_TRAINS, x72, 72) {}
+    item (FEAT_TRAINS, x73, 73) {}
+    item (FEAT_TRAINS, x74, 74) {}
+    item (FEAT_TRAINS, x75, 75) {}
+    item (FEAT_TRAINS, x76, 76) {}
+    item (FEAT_TRAINS, x77, 77) {}
+    item (FEAT_TRAINS, x78, 78) {}
+    item (FEAT_TRAINS, x79, 79) {}
+    item (FEAT_TRAINS, x80, 80) {}
+    item (FEAT_TRAINS, x81, 81) {}
+    item (FEAT_TRAINS, x82, 82) {}
+    item (FEAT_TRAINS, x83, 83) {}
+    item (FEAT_TRAINS, x89, 89) {}
+    item (FEAT_TRAINS, x90, 90) {}
+    item (FEAT_TRAINS, x91, 91) {}
+    item (FEAT_TRAINS, x92, 92) {}
+    item (FEAT_TRAINS, x93, 93) {}
+    item (FEAT_TRAINS, x94, 94) {}
+    item (FEAT_TRAINS, x95, 95) {}
+    item (FEAT_TRAINS, x96, 96) {}
+    item (FEAT_TRAINS, x97, 97) {}
+    item (FEAT_TRAINS, x98, 98) {}
+    item (FEAT_TRAINS, x99, 99) {}
+    item (FEAT_TRAINS, x100, 100) {}
+    item (FEAT_TRAINS, x101, 101) {}
+    item (FEAT_TRAINS, x102, 102) {}
+    item (FEAT_TRAINS, x103, 103) {}
+    item (FEAT_TRAINS, x104, 104) {}
+    item (FEAT_TRAINS, x105, 105) {}
+    item (FEAT_TRAINS, x106, 106) {}
+    item (FEAT_TRAINS, x107, 107) {}
+    item (FEAT_TRAINS, x108, 108) {}
+    item (FEAT_TRAINS, x109, 109) {}
+    item (FEAT_TRAINS, x110, 110) {}
+    item (FEAT_TRAINS, x111, 111) {}
+    item (FEAT_TRAINS, x112, 112) {}
+    item (FEAT_TRAINS, x113, 113) {}
+    item (FEAT_TRAINS, x114, 114) {}
+    item (FEAT_TRAINS, x115, 115) {}
+
+    sort(FEAT_TRAINS, [
+       x27,  x28,  x29,  x30,  x31,  x32,  x33,  x34,  x35,  x36,  x37,  x38,
+       x39,  x40,  x41,  x42,  x43,  x44,  x45,  x46,  x47,  x48,  x49,  x50,
+       x51,  x52,  x53,  x57,  x58,  x59,  x60,  x61,  x62,  x63,  x64,  x65,
+       x66,  x67,  x68,  x69,  x70,  x71,  x72,  x73,  x74,  x75,  x76,  x77,
+       x78,  x79,  x80,  x81,  x82,  x83,  x89,  x90,  x91,  x92,  x93,  x94,
+       x95,  x96,  x97,  x98,  x99, x100, x101, x102, x103, x104, x105, x106,
+      x107, x108, x109, x110, x111, x112, x113, x114, x115
+    ]);
   }
 }
