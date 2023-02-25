@@ -7,7 +7,7 @@ grf {
   min_compatible_version: 0;
 
   param 0 {
-    hasBugFix {
+    isBugFixOn {
       name: string(STR_PARAM_NAME_BUGFIX);
       desc: string(STR_PARAM_DESC_BUGFIX);
       type: bool;
@@ -48,7 +48,7 @@ if (grf_future_status("OG+1")) {
 }
 
 if (climate != CLIMATE_TOYLAND) {
-  if (hasBugFix) {
+  if (isBugFixOn) {
     if (climate == CLIMATE_TEMPERATE) {
       item (FEAT_TRAINS, rail_food, 38) {
         property {
