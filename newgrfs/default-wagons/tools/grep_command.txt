@@ -1,1 +1,0 @@
-grep -P "(?:^STR_VEHICLE_NAME_TRAIN_WAGON_\w+_(?:COAL_CAR|LIVESTOCK_VAN|IRON_ORE_HOPPER|STEEL_TRUCK|PAPER_TRUCK|COPPER_ORE_HOPPER|WATER_TANKER|RUBBER_TRUCK)\s*:.*$|^##grflangid\s+.*$)" -r . > ../generate_lang_files.txt
