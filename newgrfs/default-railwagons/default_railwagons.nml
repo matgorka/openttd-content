@@ -25,7 +25,7 @@ grf {
       max_value: 2;
       def_value: 1;
       names: {
-        0: string(STR_PARAM_DEFAULT);
+        0: string(STR_PARAM_REEFER_DEFAULT);
         1: string(STR_PARAM_SEPARATE);
         2: string(STR_PARAM_SINGLE_WAGON);
       };
