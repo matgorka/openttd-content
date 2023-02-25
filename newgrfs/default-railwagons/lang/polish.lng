@@ -1,6 +1,7 @@
 ##grflangid 0x30
 STR_GRF_NAME            :Domyślne wagony
 STR_GRF_DESC            :Poprawka do OpenGFX+ Industries, dodaje domyślne wagony na żywność i owoce do klimatu umiarkowanego (z klimatów subarktycznego i subtropikalnego). Przywraca wagony na ziarno do klimatów subarktycznego i subtropikalnego.{}{}Licencja: {WHITE}ISC
+STR_ERR_OGPT            :{YELLOW}OpenGFX+ Trains{WHITE} i {YELLOW}Domyślne wagony{WHITE} nie działają zbyt dobrze razem
 STR_PARAM_NAME_BUGFIX   :Zastosuj poprawki
 STR_PARAM_DESC_BUGFIX   :Dodaje domyślne wagony na żywność i owoce do klimatu umiarkowanego (z klimatów subarktycznego i subtropikalnego). Przywraca wagony na ziarno do klimatów subarktycznego i subtropikalnego (bez poprawki pszenica i kukurydza są przechowywane kolejno w wagonach na węgiel i miedź).
 STR_PARAM_NAME_SEPARATE :Wagony na żywność i owoce

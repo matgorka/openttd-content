@@ -43,6 +43,10 @@ grf {
   }
 }
 
+if (grf_future_status("OG+1")) {
+  error(ERROR, string(STR_ERR_OGPT));
+}
+
 if (climate != CLIMATE_TOYLAND) {
   if (hasBugFix) {
     if (climate == CLIMATE_TEMPERATE) {
