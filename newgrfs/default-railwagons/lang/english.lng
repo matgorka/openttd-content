@@ -15,6 +15,7 @@ STR_PARAM_DISABLED       :Disabled
 STR_PARAM_REEFER_DEFAULT :Depending on climate (separate on sub-arctic, otherwise a refrigerator van)
 STR_PARAM_SEPARATE       :Separate railwagons
 STR_PARAM_SINGLE_WAGON   :Single refrigerator van
+STR_PARAM_WAGONS_DESC    :test
 
 STR_PARAM_COAL_CAR                    :Coal Truck
 STR_PARAM_LIVESTOCK_VAN               :Livestock Van
@@ -25,3 +26,4 @@ STR_PARAM_COPPER_ORE_HOPPER           :Copper Ore Hopper
 STR_PARAM_WATER_TANKER                :Water Tanker
 STR_PARAM_RUBBER_TRUCK                :Rubber Truck
 STR_WAGON_NAME_REFRIGERATOR_VAN       :Refrigerator Van
+

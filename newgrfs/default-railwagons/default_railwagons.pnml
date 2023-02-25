@@ -1,3 +1,16 @@
+#define APPLY_TO_ALL_RAILS(NMLID, GAMEID, PROPERTIES) \
+item (FEAT_TRAINS, rail_##NMLID, GAMEID) {            \
+  property PROPERTIES                                 \
+}                                                     \
+                                                      \
+item (FEAT_TRAINS, monorail_##NMLID, GAMEID + 30) {   \
+  property PROPERTIES                                 \
+}                                                     \
+                                                      \
+item (FEAT_TRAINS, maglev_##NMLID, GAMEID + 62) {     \
+  property PROPERTIES                                 \
+}
+
 grf {
   grfid: "\01\16M\00";
   name: string(STR_GRF_NAME);
@@ -50,169 +63,47 @@ if (grf_future_status("OG+1")) {
 if (climate != CLIMATE_TOYLAND) {
   if (isBugFixOn) {
     if (climate == CLIMATE_TEMPERATE) {
-      item (FEAT_TRAINS, rail_food, 38) {
-        property {
-          climates_available: ALL_CLIMATES;
-          default_cargo_type: 0x0B;
-        }
-      }
+      APPLY_TO_ALL_RAILS(food, 38, {
+        climates_available: ALL_CLIMATES;
+        default_cargo_type: 0x0B;
+      })
 
-      item (FEAT_TRAINS, monorail_food, 68) {
-        property {
-          climates_available: ALL_CLIMATES;
-          default_cargo_type: 0x0B;
-        }
-      }
-
-      item (FEAT_TRAINS, maglev_food, 100) {
-        property {
-          climates_available: ALL_CLIMATES;
-          default_cargo_type: 0x0B;
-        }
-      }
-
-      item (FEAT_TRAINS, rail_fruit, 42) {
-        property {
-          climates_available: ALL_CLIMATES;
-          default_cargo_type: 0x0E;
-        }
-      }
-
-      item (FEAT_TRAINS, monorail_fruit, 72) {
-        property {
-          climates_available: ALL_CLIMATES;
-          default_cargo_type: 0x0E;
-        }
-      }
-
-      item (FEAT_TRAINS, maglev_fruit, 104) {
-        property {
-          climates_available: ALL_CLIMATES;
-          default_cargo_type: 0x0E;
-        }
-      }
+      APPLY_TO_ALL_RAILS(fruit, 42, {
+        climates_available: ALL_CLIMATES;
+        default_cargo_type: 0x0E;
+      })
     } else {
       if (climate == CLIMATE_ARCTIC) {
-        item (FEAT_TRAINS, rail_coal, 29) {
-          property {
-            refittable_cargo_classes: bitmask(CC_BULK);
-            cargo_disallow_refit:     [ 0x06 ];
-          }
-        }
-
-        item (FEAT_TRAINS, monorail_coal, 59) {
-          property {
-            refittable_cargo_classes: bitmask(CC_BULK);
-            cargo_disallow_refit:     [ 0x06 ];
-          }
-        }
-
-        item (FEAT_TRAINS, maglev_coal, 91) {
-          property {
-            refittable_cargo_classes: bitmask(CC_BULK);
-            cargo_disallow_refit:     [ 0x06 ];
-          }
-        }
+        APPLY_TO_ALL_RAILS(coal, 29, {
+          refittable_cargo_classes: bitmask(CC_BULK);
+          cargo_disallow_refit:     [ 0x06 ];
+        })
       } else {
-        item (FEAT_TRAINS, rail_copper, 40) {
-          property {
-            refittable_cargo_classes: bitmask(CC_BULK);
-            cargo_disallow_refit:     [ 0x06 ];
-          }
-        }
-
-        item (FEAT_TRAINS, monorail_copper, 70) {
-          property {
-            refittable_cargo_classes: bitmask(CC_BULK);
-            cargo_disallow_refit:     [ 0x06 ];
-          }
-        }
-
-        item (FEAT_TRAINS, maglev_copper, 102) {
-          property {
-            refittable_cargo_classes: bitmask(CC_BULK);
-            cargo_disallow_refit:     [ 0x06 ];
-          }
-        }
+        APPLY_TO_ALL_RAILS(copper, 40, {
+          refittable_cargo_classes: bitmask(CC_BULK);
+          cargo_disallow_refit:     [ 0x06 ];
+        })
       }
 
-      item (FEAT_TRAINS, rail_grain, 33) {
-        property {
-          default_cargo_type: 0x06;
-        }
-      }
-
-      item (FEAT_TRAINS, monorail_grain, 63) {
-        property {
-          default_cargo_type: 0x06;
-        }
-      }
-
-      item (FEAT_TRAINS, maglev_grain, 95) {
-        property {
-          default_cargo_type: 0x06;
-        }
-      }
+      APPLY_TO_ALL_RAILS(grain, 33, {
+        default_cargo_type: 0x06;
+      })
     }
   }
 
   if (climate == CLIMATE_ARCTIC && isFoodAndFruitSeparate == 1) {
-    item (FEAT_TRAINS, rail_food, 38) {
-      property {
-        cargo_disallow_refit: [ 0x0E ];
-      }
-    }
+    APPLY_TO_ALL_RAILS(food, 38, {
+      cargo_disallow_refit: [ 0x0E ];
+    })
 
-    item (FEAT_TRAINS, monorail_food, 68) {
-      property {
-        cargo_disallow_refit: [ 0x0E ];
-      }
-    }
-
-    item (FEAT_TRAINS, maglev_food, 100) {
-      property {
-        cargo_disallow_refit: [ 0x0E ];
-      }
-    }
-
-    item (FEAT_TRAINS, rail_fruit, 42) {
-      property {
-        climates_available: ALL_CLIMATES;
-        default_cargo_type: 0x0E;
-      }
-    }
-
-    item (FEAT_TRAINS, monorail_fruit, 72) {
-      property {
-        climates_available: ALL_CLIMATES;
-        default_cargo_type: 0x0E;
-      }
-    }
-
-    item (FEAT_TRAINS, maglev_fruit, 104) {
-      property {
-        climates_available: ALL_CLIMATES;
-        default_cargo_type: 0x0E;
-      }
-    }
+    APPLY_TO_ALL_RAILS(fruit, 42, {
+      climates_available: ALL_CLIMATES;
+      default_cargo_type: 0x0E;
+    })
   } else if (climate != CLIMATE_ARCTIC && isFoodAndFruitSeparate == 2) {
-    item (FEAT_TRAINS, rail_food, 38) {
-      property {
-        refittable_cargo_classes: bitmask(CC_REFRIGERATED);
-      }
-    }
-
-    item (FEAT_TRAINS, monorail_food, 68) {
-      property {
-        refittable_cargo_classes: bitmask(CC_REFRIGERATED);
-      }
-    }
-
-    item (FEAT_TRAINS, maglev_food, 100) {
-      property {
-        refittable_cargo_classes: bitmask(CC_REFRIGERATED);
-      }
-    }
+    APPLY_TO_ALL_RAILS(food, 38, {
+      refittable_cargo_classes: bitmask(CC_REFRIGERATED);
+    })
 
     disable_item(FEAT_TRAINS, 42);
     disable_item(FEAT_TRAINS, 72);
@@ -220,23 +111,9 @@ if (climate != CLIMATE_TOYLAND) {
   }
 
   if (isRenameFlagOn) {
-    item (FEAT_TRAINS, rail_food, 38) {
-      property {
-        name: string(STR_WAGON_NAME_REFRIGERATOR_VAN);
-      }
-    }
-
-    item (FEAT_TRAINS, monorail_food, 68) {
-      property {
-        name: string(STR_WAGON_NAME_REFRIGERATOR_VAN);
-      }
-    }
-
-    item (FEAT_TRAINS, maglev_food, 100) {
-      property {
-        name: string(STR_WAGON_NAME_REFRIGERATOR_VAN);
-      }
-    }
+    APPLY_TO_ALL_RAILS(food, 38, {
+      name: string(STR_WAGON_NAME_REFRIGERATOR_VAN);
+    })
   }
 
   item (FEAT_TRAINS, x27, 27) {}
