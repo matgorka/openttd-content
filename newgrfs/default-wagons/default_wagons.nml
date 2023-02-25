@@ -184,21 +184,25 @@ if (climate != CLIMATE_TOYLAND) {
   } else if (climate != CLIMATE_ARCTIC && isFoodAndFruitSeparate == 2) {
     item (FEAT_TRAINS, rail_food, 38) {
       property {
-        cargo_allow_refit: [ 0x0E ];
+        refittable_cargo_classes: bitmask(CC_REFRIGERATED);
       }
     }
 
     item (FEAT_TRAINS, monorail_food, 68) {
       property {
-        cargo_allow_refit: [ 0x0E ];
+        refittable_cargo_classes: bitmask(CC_REFRIGERATED);
       }
     }
 
     item (FEAT_TRAINS, maglev_food, 100) {
       property {
-        cargo_allow_refit: [ 0x0E ];
+        refittable_cargo_classes: bitmask(CC_REFRIGERATED);
       }
     }
+
+    disable_item(FEAT_TRAINS, 42);
+    disable_item(FEAT_TRAINS, 72);
+    disable_item(FEAT_TRAINS, 104);
   }
 
   item (FEAT_TRAINS, x27, 27) {}
