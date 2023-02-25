@@ -6,7 +6,7 @@ STR_PARAM_DESC_BUGFIX   :Dodaje domyślne wagony na żywność i owoce do klimat
 STR_PARAM_NAME_SEPARATE :Wagony na żywność i owoce
 STR_PARAM_DESC_SEPARATE :Ustaw ten parametr by zmienić sposób w jaki przechowywane są żywność i owoce w wagonach. "Zależne od klimatu" oznacza, że ten GRF nie wprowadzi żadnych zmian wobec ustawień domyślnych.
 STR_PARAM_NAME_RENAME   :Zmień nazwę wagonu na żywność na wagon chłodniczy
-STR_PARAM_DESC_RENAME   :{RED}Ostrzeżenie: to ustawienie używa tłumaczenia zdefiniowanego w tym GRFie. Nie wszystkie języki są obsługiwane. Dla sprawdzenia listy obsługiwanych języków możesz zajrzeć do pliku "readme".
+STR_PARAM_DESC_RENAME   :{RED}Ostrzeżenie:{BLACK} to ustawienie używa tłumaczenia zdefiniowanego w tym GRFie. Nie wszystkie języki są obsługiwane. Dla sprawdzenia listy obsługiwanych języków możesz zajrzeć do pliku "readme".
 STR_PARAM_DEFAULT       :Zależne od klimatu (oddzielnie w klimacie arktycznym, w przeciwnym razie wagon chłodniczy)
 STR_PARAM_SEPARATE      :Oddzielne wagony
 STR_PARAM_SINGLE_WAGON  :Jeden wagon chłodniczy
@@ -19,3 +19,4 @@ STR_PARAM_PAPER_TRUCK                 :Wagon na papier
 STR_PARAM_COPPER_ORE_HOPPER           :Wagon na rudę miedzi
 STR_PARAM_WATER_TANKER                :Cysterna na wodę
 STR_PARAM_RUBBER_TRUCK                :Wagon na kauczuk
+STR_WAGON_NAME_REFRIGERATOR_VAN       :Wagon chłodniczy

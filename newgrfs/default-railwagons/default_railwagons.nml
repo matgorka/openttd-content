@@ -215,6 +215,26 @@ if (climate != CLIMATE_TOYLAND) {
     disable_item(FEAT_TRAINS, 104);
   }
 
+  if (isRenameFlagOn) {
+    item (FEAT_TRAINS, rail_food, 38) {
+      property {
+        name: string(STR_WAGON_NAME_REFRIGERATOR_VAN);
+      }
+    }
+
+    item (FEAT_TRAINS, monorail_food, 68) {
+      property {
+        name: string(STR_WAGON_NAME_REFRIGERATOR_VAN);
+      }
+    }
+
+    item (FEAT_TRAINS, maglev_food, 100) {
+      property {
+        name: string(STR_WAGON_NAME_REFRIGERATOR_VAN);
+      }
+    }
+  }
+
   item (FEAT_TRAINS, x27, 27) {}
   item (FEAT_TRAINS, x28, 28) {}
   item (FEAT_TRAINS, x29, 29) {}

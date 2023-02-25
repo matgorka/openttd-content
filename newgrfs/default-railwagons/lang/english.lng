@@ -7,7 +7,7 @@ STR_PARAM_DESC_BUGFIX   :Adds default food vans and fruit trucks (from sub-arcti
 STR_PARAM_NAME_SEPARATE :Food vans and fruit trucks
 STR_PARAM_DESC_SEPARATE :Set this parameter to change how food and fruits are stored in railwagons. "Climate-dependent" means this GRF won't interfere with how they are stored.
 STR_PARAM_NAME_RENAME   :Rename food van to refrigerator van
-STR_PARAM_DESC_RENAME   :{RED}Warning: this setting uses a translation defined in this GRF. Not all languages are supported. To check the list of supported languages you can look into the "readme" file.
+STR_PARAM_DESC_RENAME   :{RED}Warning:{BLACK} this setting uses a translation defined in this GRF. Not all languages are supported. To check the list of supported languages you can look into the "readme" file.
 STR_PARAM_DEFAULT       :Climate-dependent (separate on sub-arctic, otherwise a refrigerator van)
 STR_PARAM_SEPARATE      :Separate railwagons
 STR_PARAM_SINGLE_WAGON  :Single refrigerator van
@@ -20,3 +20,4 @@ STR_PARAM_PAPER_TRUCK                 :Paper Truck
 STR_PARAM_COPPER_ORE_HOPPER           :Copper Ore Hopper
 STR_PARAM_WATER_TANKER                :Water Tanker
 STR_PARAM_RUBBER_TRUCK                :Rubber Truck
+STR_WAGON_NAME_REFRIGERATOR_VAN       :Refrigerator Van
