@@ -11,6 +11,22 @@ item (FEAT_TRAINS, maglev_##NMLID, GAMEID + 62) {     \
   property PROPERTIES                                 \
 }
 
+#define DISABLE_ON_ALL_RAILS(GAMEID)    \
+disable_item(FEAT_TRAINS, GAMEID);      \
+disable_item(FEAT_TRAINS, GAMEID + 30); \
+disable_item(FEAT_TRAINS, GAMEID + 62); \
+
+#define BOOL(N, BIT, FLAG, NAME, DEF_VALUE) \
+param N {                                   \
+  FLAG {                                    \
+    name: string(STR_PARAM_NAME_##NAME);    \
+    desc: string(STR_PARAM_DESC_##NAME);    \
+    type: bool;                             \
+    bit: BIT;                               \
+    def_value: DEF_VALUE;                   \
+  }                                         \
+}
+
 grf {
   grfid: "\01\16M\00";
   name: string(STR_GRF_NAME);
@@ -19,15 +35,7 @@ grf {
   version: 1;
   min_compatible_version: 0;
 
-  param 0 {
-    isBugFixOn {
-      name: string(STR_PARAM_NAME_BUGFIX);
-      desc: string(STR_PARAM_DESC_BUGFIX);
-      type: bool;
-      bit: 1;
-      def_value: 1;
-    }
-  }
+  BOOL(0, 0, isBugFixOn, BUGFIX, 1)
 
   param 1 {
     isFoodAndFruitSeparate {
@@ -45,15 +53,7 @@ grf {
     }
   }
 
-  param 2 {
-    isRenameFlagOn {
-      name: string(STR_PARAM_NAME_RENAME);
-      desc: string(STR_PARAM_DESC_RENAME);
-      type: bool;
-      bit: 2;
-      def_value: 0;
-    }
-  }
+  BOOL(2, 1, isRenameOn, RENAME, 0)
 }
 
 if (grf_future_status("OG+1")) {
@@ -105,12 +105,11 @@ if (climate != CLIMATE_TOYLAND) {
       refittable_cargo_classes: bitmask(CC_REFRIGERATED);
     })
 
-    disable_item(FEAT_TRAINS, 42);
-    disable_item(FEAT_TRAINS, 72);
-    disable_item(FEAT_TRAINS, 104);
+    // disable fruit wagons
+    DISABLE_ON_ALL_RAILS(42)
   }
 
-  if (isRenameFlagOn) {
+  if (isRenameOn) {
     APPLY_TO_ALL_RAILS(food, 38, {
       name: string(STR_WAGON_NAME_REFRIGERATOR_VAN);
     })
