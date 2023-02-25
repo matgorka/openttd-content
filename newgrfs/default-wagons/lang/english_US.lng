@@ -1,0 +1,20 @@
+##grflangid 0x00
+STR_GRF_NAME            :Default railcars
+STR_GRF_DESC            :An OpenGFX+ Industries fix, adds default food and fruit railcars (from sub-arctic and sub-tropical) to temperate climates. Restores grain wagons to sub-arctic and sub-tropical climates.{}{}License: {WHITE}ISC
+STR_GRF_URL             :https://github.com/matgorka/openttd-content/tree/master/newgrfs/default-wagons/
+STR_PARAM_NAME_BUGFIX   :Apply bugfix
+STR_PARAM_DESC_BUGFIX   :Adds default food and fruit railcars (from sub-arctic and sub-tropical) to temperate climates. Restores grain wagons to sub-arctic and sub-tropical climates (without the fix wheat and maize are stored in coal and copper wagons respectively).
+STR_PARAM_NAME_SEPARATE :Food and fruit railcars
+STR_PARAM_DESC_SEPARATE :Set this parameter to change how food and fruits are stored in railcars. Climate-dependent means this GRF won't interfere with how they are stored.
+STR_PARAM_DEFAULT       :Climate-dependent (separate on sub-arctic, otherwise a refrigerated railcar)
+STR_PARAM_SEPARATE      :Separate railcars
+STR_PARAM_SINGLE_WAGON  :Single refrigerated railcar
+
+STR_PARAM_COAL_CAR                    :Coal Hopper
+STR_PARAM_LIVESTOCK_VAN               :Livestock Boxcar
+STR_PARAM_IRON_ORE_HOPPER             :Iron Ore Hopper
+STR_PARAM_STEEL_TRUCK                 :Steel Car
+STR_PARAM_PAPER_TRUCK                 :Paper Car
+STR_PARAM_COPPER_ORE_HOPPER           :Copper Ore Hopper
+STR_PARAM_WATER_TANKER                :Water Tanker
+STR_PARAM_RUBBER_TRUCK                :Rubber Gondola
