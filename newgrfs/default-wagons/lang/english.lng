@@ -1,6 +1,6 @@
 ##grflangid 0x01
 STR_GRF_NAME            :Default wagons
-STR_GRF_DESC            :An OpenGFX+ Industries fix, adds default food and fruit wagons (from sub-arctic and sub-tropical) to temperate climates. Restores grain wagons to sub-arctic and sub-tropical climates.
+STR_GRF_DESC            :An OpenGFX+ Industries fix, adds default food and fruit wagons (from sub-arctic and sub-tropical) to temperate climates. Restores grain wagons to sub-arctic and sub-tropical climates.{}{}License: {WHITE}ISC
 STR_GRF_URL             :https://github.com/matgorka/openttd-content/tree/master/newgrfs/default-wagons/
 STR_PARAM_NAME_BUGFIX   :Apply bugfix
 STR_PARAM_DESC_BUGFIX   :Adds default food and fruit wagons (from sub-arctic and sub-tropical) to temperate climates. Restores grain wagons to sub-arctic and sub-tropical climates (without the fix wheat and maize are stored in coal and copper wagons respectively).
