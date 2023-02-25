@@ -3,9 +3,6 @@ STR_GRF_DESC            :An OpenGFX+ Industries fix, adds default food and fruit
 
 STR_PARAM_COAL_CAR                    :Coal Hopper
 STR_PARAM_LIVESTOCK_VAN               :Livestock Boxcar
-STR_PARAM_IRON_ORE_HOPPER             :Iron Ore Hopper
 STR_PARAM_STEEL_TRUCK                 :Steel Car
 STR_PARAM_PAPER_TRUCK                 :Paper Car
-STR_PARAM_COPPER_ORE_HOPPER           :Copper Ore Hopper
-STR_PARAM_WATER_TANKER                :Water Tanker
 STR_PARAM_RUBBER_TRUCK                :Rubber Gondola
