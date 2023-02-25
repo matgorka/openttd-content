@@ -1,3 +1,10 @@
 ##grflangid 0x30
-STR_GRF_NAME :Domyślne wagony
-STR_GRF_DESC :Poprawka do OpenGFX+ Industries, dodaje domyślne wagony na żywność i owoce do klimatu umiarkowanego (z klimatów subarktycznego i subtropikalnego). Przywraca wagony na ziarno do klimatów subarktycznego i subtropikalnego.{}{}Licencja: {WHITE}ISC
+STR_GRF_NAME            :Domyślne wagony
+STR_GRF_DESC            :Poprawka do OpenGFX+ Industries, dodaje domyślne wagony na żywność i owoce do klimatu umiarkowanego (z klimatów subarktycznego i subtropikalnego). Przywraca wagony na ziarno do klimatów subarktycznego i subtropikalnego.{}{}Licencja: {WHITE}ISC
+STR_PARAM_NAME_BUGFIX   :Zastosuj poprawki
+STR_PARAM_DESC_BUGFIX   :Dodaje domyślne wagony na żywność i owoce do klimatu umiarkowanego (z klimatów subarktycznego i subtropikalnego). Przywraca wagony na ziarno do klimatów subarktycznego i subtropikalnego (bez poprawki pszenica i kukurydza są przechowywane kolejno w wagonach na węgiel i miedź).
+STR_PARAM_NAME_SEPARATE :Wagony na żywność i owoce
+STR_PARAM_DESC_SEPARATE :Ustaw ten parametr by zmienić sposób w jaki przechowywane są żywność i owoce w wagonach. "Zależne od klimatu" oznacza, że ten GRF nie wprowadzi żadnych zmian wobec ustawień domyślnych.
+STR_PARAM_DEFAULT       :Zależne od klimatu (oddzielnie w klimacie arktycznym, w przeciwnym razie wagon chłodniczy)
+STR_PARAM_SEPARATE      :Oddzielne wagony
+STR_PARAM_SINGLE_WAGON  :Jeden wagon chłodniczy
