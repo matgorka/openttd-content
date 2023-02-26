@@ -11,5 +11,5 @@ STR_PARAM_LIVESTOCK_VAN               :Livestock Boxcar
 STR_PARAM_STEEL_TRUCK                 :Steel Car
 STR_PARAM_PAPER_TRUCK                 :Paper Car
 STR_PARAM_RUBBER_TRUCK                :Rubber Gondola
-STR_PARAM_NAME_GRAIN_CARGO            :{C_EN} grain/wheat/corn
+STR_PARAM_NAME_GRAIN_CARGO            :{TRAIN} {C_EN} grain/wheat/corn
 STR_WAGON_NAME_REFRIGERATOR_VAN       :Refrigerated Boxcar

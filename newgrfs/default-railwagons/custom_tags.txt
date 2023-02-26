@@ -1,2 +1,2 @@
-C_EN :Cargo:
-C_PL :Ładunek:
+C_EN :  Cargo:
+C_PL :  Ładunek:
