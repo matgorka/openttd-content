@@ -23,24 +23,4 @@ STR_PARAM_PAPER_TRUCK                 :Wagon na papier
 STR_PARAM_COPPER_ORE_HOPPER           :Wagon na rudę miedzi
 STR_PARAM_WATER_TANKER                :Cysterna na wodę
 STR_PARAM_RUBBER_TRUCK                :Wagon na kauczuk
-STR_PARAM_NAME_PASSENGERS_CARGO       :{TRAIN} {C_PL} pasażerowie
-STR_PARAM_NAME_MAIL_CARGO             :{TRAIN} {C_PL} poczta
-STR_PARAM_NAME_VALUABLES_CARGO        :{TRAIN} {C_PL} kosztowności
-STR_PARAM_NAME_GOLD_CARGO             :{TRAIN} {C_PL} złoto
-STR_PARAM_NAME_DIAMONDS_CARGO         :{TRAIN} {C_PL} diamenty
-STR_PARAM_NAME_COAL_CARGO             :{TRAIN} {C_PL} węgiel
-STR_PARAM_NAME_COPPER_ORE_CARGO       :{TRAIN} {C_PL} ruda miedzi
-STR_PARAM_NAME_IRON_ORE_CARGO         :{TRAIN} {C_PL} ruda żelaza
-STR_PARAM_NAME_STEEL_CARGO            :{TRAIN} {C_PL} stal
-STR_PARAM_NAME_PAPER_CARGO            :{TRAIN} {C_PL} papier
-STR_PARAM_NAME_WOOD_CARGO             :{TRAIN} {C_PL} drewno
-STR_PARAM_NAME_GOODS_CARGO            :{TRAIN} {C_PL} towary
-STR_PARAM_NAME_OIL_CARGO              :{TRAIN} {C_PL} ropa
-STR_PARAM_NAME_RUBBER_CARGO           :{TRAIN} {C_PL} kauczuk
-STR_PARAM_NAME_WATER_CARGO            :{TRAIN} {C_PL} woda
-STR_PARAM_NAME_FOOD_CARGO             :{TRAIN} {C_PL} żywność
-STR_PARAM_NAME_FRUIT_CARGO            :{TRAIN} {C_PL} owoce
-STR_PARAM_NAME_GRAIN_CARGO            :{TRAIN} {C_PL} zboże/pszenica/kukurydza
-STR_PARAM_NAME_LIVESTOCK_CARGO        :{TRAIN} {C_PL} żywiec
-STR_PARAM_DESC_CARGO                  :Ten typ ładunku zostanie wyłączony/włączony dla wagonów
 STR_WAGON_NAME_REFRIGERATOR_VAN       :Wagon chłodniczy

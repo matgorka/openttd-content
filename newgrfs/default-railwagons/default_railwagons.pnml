@@ -83,15 +83,8 @@
 
 #define __ARR(I, _)            x##I,
 #define __MARK(I, _)           item (FEAT_TRAINS, x##I, I) {}
-#define __DISABLE_CARGO(I, ID) item (FEAT_TRAINS, x##I, I) {  \
-  property {                                                  \
-    cargo_disallow_refit: [ ID ];                             \
-  }                                                           \
-}
-
 #define WAGONS_ARRAY()         [ FORLOOP(__ARR, 0) ]
 #define MARK_WAGONS_TO_SORT()  FORLOOP(__MARK, 0)
-#define DISABLE_CARGO(ID)      FORLOOP(__DISABLE_CARGO, ID)
 
 #define APPLY_TO_ALL_RAILS(NMLID, INGAMEID, PROPERTIES) \
 item (FEAT_TRAINS, rail_##NMLID, INGAMEID) {            \
@@ -125,10 +118,6 @@ param N {                                      \
 #define BOOL(N, FLAG, NAME, DEF_VALUE) \
   __BOOL(N, FLAG, NAME, NAME, DEF_VALUE)
 
-#define CARGOBOOL(N, FLAG, NAME, DEF_VALUE) \
-  __BOOL(N, FLAG, NAME##_CARGO, CARGO, DEF_VALUE)
-
-
 grf {
   grfid: "\01\16M\00";
   name: string(STR_GRF_NAME);
@@ -156,25 +145,6 @@ grf {
   }
 
   BOOL(2, isRenameOn, RENAME, 0)
-  CARGOBOOL(3, isPassengersCargoOn, PASSENGERS, 1)
-  CARGOBOOL(4, isMailCargoOn, MAIL, 1)
-  CARGOBOOL(5, isValuablesCargoOn, VALUABLES, 1)
-  CARGOBOOL(6, isGoldCargoOn, GOLD, 1)
-  CARGOBOOL(7, isDiamondsCargoOn, DIAMONDS, 1)
-  CARGOBOOL(8, isCoalCargoOn, COAL, 1)
-  CARGOBOOL(9, isCopperCargoOn, COPPER_ORE, 1)
-  CARGOBOOL(10, isIronCargoOn, IRON_ORE, 1)
-  CARGOBOOL(11, isSteelCargoOn, STEEL, 1)
-  CARGOBOOL(12, isPaperCargoOn, PAPER, 1)
-  CARGOBOOL(13, isWoodCargoOn, WOOD, 1)
-  CARGOBOOL(14, isGoodsCargoOn, GOODS, 1)
-  CARGOBOOL(15, isOilCargoOn, OIL, 1)
-  CARGOBOOL(16, isRubberCargoOn, RUBBER, 1)
-  CARGOBOOL(17, isWaterCargoOn, WATER, 1)
-  CARGOBOOL(18, isFoodCargoOn, FOOD, 1)
-  CARGOBOOL(19, isFruitCargoOn, FRUIT, 1)
-  CARGOBOOL(20, isGrainCargoOn, GRAIN, 1)
-  CARGOBOOL(21, isLivestockCargoOn, LIVESTOCK, 1)
 }
 
 if (grf_future_status("OG+1")) {
@@ -234,82 +204,6 @@ if (climate != CLIMATE_TOYLAND) {
     APPLY_TO_ALL_RAILS(food, 38, {
       name: string(STR_WAGON_NAME_REFRIGERATOR_VAN);
     })
-  }
-
-  if (!isPassengersCargoOn) {
-    DISABLE_CARGO(0x00)
-  }
-
-  if (!isMailCargoOn) {
-    DISABLE_CARGO(0x02)
-  }
-
-  if (!isValuablesCargoOn) {
-    DISABLE_CARGO(0x0A)
-  }
-
-  if (!isGoldCargoOn) {
-    DISABLE_CARGO(0x11)
-  }
-
-  if (!isDiamondsCargoOn) {
-    DISABLE_CARGO(0x0F)
-  }
-
-  if (!isCoalCargoOn) {
-    DISABLE_CARGO(0x01)
-  }
-
-  if (!isCopperCargoOn) {
-    DISABLE_CARGO(0x0D)
-  }
-
-  if (!isIronCargoOn) {
-    DISABLE_CARGO(0x08)
-  }
-
-  if (!isSteelCargoOn) {
-    DISABLE_CARGO(0x0C)
-  }
-
-  if (!isPaperCargoOn) {
-    DISABLE_CARGO(0x10)
-  }
-
-  if (!isWoodCargoOn) {
-    DISABLE_CARGO(0x07)
-  }
-
-  if (!isGoodsCargoOn) {
-    DISABLE_CARGO(0x05)
-  }
-
-  if (!isOilCargoOn) {
-    DISABLE_CARGO(0x03)
-  }
-
-  if (!isRubberCargoOn) {
-    DISABLE_CARGO(0x12)
-  }
-
-  if (!isWaterCargoOn) {
-    DISABLE_CARGO(0x09)
-  }
-
-  if (!isFoodCargoOn) {
-    DISABLE_CARGO(0x0B)
-  }
-
-  if (!isFruitCargoOn) {
-    DISABLE_CARGO(0x0E)
-  }
-
-  if (!isGrainCargoOn) {
-    DISABLE_CARGO(0x06)
-  }
-
-  if (!isLivestockCargoOn) {
-    DISABLE_CARGO(0x04)
   }
 
   MARK_WAGONS_TO_SORT()
