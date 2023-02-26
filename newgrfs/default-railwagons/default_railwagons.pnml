@@ -1,90 +1,97 @@
-#define FORLOOP(MACRO) \
-  MACRO(27)            \
-  MACRO(28)            \
-  MACRO(29)            \
-  MACRO(30)            \
-  MACRO(31)            \
-  MACRO(32)            \
-  MACRO(33)            \
-  MACRO(34)            \
-  MACRO(35)            \
-  MACRO(36)            \
-  MACRO(37)            \
-  MACRO(38)            \
-  MACRO(39)            \
-  MACRO(40)            \
-  MACRO(41)            \
-  MACRO(42)            \
-  MACRO(43)            \
-  MACRO(44)            \
-  MACRO(45)            \
-  MACRO(46)            \
-  MACRO(47)            \
-  MACRO(48)            \
-  MACRO(49)            \
-  MACRO(50)            \
-  MACRO(51)            \
-  MACRO(52)            \
-  MACRO(53)            \
-  MACRO(57)            \
-  MACRO(58)            \
-  MACRO(59)            \
-  MACRO(60)            \
-  MACRO(61)            \
-  MACRO(62)            \
-  MACRO(63)            \
-  MACRO(64)            \
-  MACRO(65)            \
-  MACRO(66)            \
-  MACRO(67)            \
-  MACRO(68)            \
-  MACRO(69)            \
-  MACRO(70)            \
-  MACRO(71)            \
-  MACRO(72)            \
-  MACRO(73)            \
-  MACRO(74)            \
-  MACRO(75)            \
-  MACRO(76)            \
-  MACRO(77)            \
-  MACRO(78)            \
-  MACRO(79)            \
-  MACRO(80)            \
-  MACRO(81)            \
-  MACRO(82)            \
-  MACRO(83)            \
-  MACRO(89)            \
-  MACRO(90)            \
-  MACRO(91)            \
-  MACRO(92)            \
-  MACRO(93)            \
-  MACRO(94)            \
-  MACRO(95)            \
-  MACRO(96)            \
-  MACRO(97)            \
-  MACRO(98)            \
-  MACRO(99)            \
-  MACRO(100)           \
-  MACRO(101)           \
-  MACRO(102)           \
-  MACRO(103)           \
-  MACRO(104)           \
-  MACRO(105)           \
-  MACRO(106)           \
-  MACRO(107)           \
-  MACRO(108)           \
-  MACRO(109)           \
-  MACRO(110)           \
-  MACRO(111)           \
-  MACRO(112)           \
-  MACRO(113)           \
-  MACRO(114)           \
-  MACRO(115)
+#define FORLOOP(MACRO, ARG) \
+  MACRO(27, ARG)            \
+  MACRO(28, ARG)            \
+  MACRO(29, ARG)            \
+  MACRO(30, ARG)            \
+  MACRO(31, ARG)            \
+  MACRO(32, ARG)            \
+  MACRO(33, ARG)            \
+  MACRO(34, ARG)            \
+  MACRO(35, ARG)            \
+  MACRO(36, ARG)            \
+  MACRO(37, ARG)            \
+  MACRO(38, ARG)            \
+  MACRO(39, ARG)            \
+  MACRO(40, ARG)            \
+  MACRO(41, ARG)            \
+  MACRO(42, ARG)            \
+  MACRO(43, ARG)            \
+  MACRO(44, ARG)            \
+  MACRO(45, ARG)            \
+  MACRO(46, ARG)            \
+  MACRO(47, ARG)            \
+  MACRO(48, ARG)            \
+  MACRO(49, ARG)            \
+  MACRO(50, ARG)            \
+  MACRO(51, ARG)            \
+  MACRO(52, ARG)            \
+  MACRO(53, ARG)            \
+  MACRO(57, ARG)            \
+  MACRO(58, ARG)            \
+  MACRO(59, ARG)            \
+  MACRO(60, ARG)            \
+  MACRO(61, ARG)            \
+  MACRO(62, ARG)            \
+  MACRO(63, ARG)            \
+  MACRO(64, ARG)            \
+  MACRO(65, ARG)            \
+  MACRO(66, ARG)            \
+  MACRO(67, ARG)            \
+  MACRO(68, ARG)            \
+  MACRO(69, ARG)            \
+  MACRO(70, ARG)            \
+  MACRO(71, ARG)            \
+  MACRO(72, ARG)            \
+  MACRO(73, ARG)            \
+  MACRO(74, ARG)            \
+  MACRO(75, ARG)            \
+  MACRO(76, ARG)            \
+  MACRO(77, ARG)            \
+  MACRO(78, ARG)            \
+  MACRO(79, ARG)            \
+  MACRO(80, ARG)            \
+  MACRO(81, ARG)            \
+  MACRO(82, ARG)            \
+  MACRO(83, ARG)            \
+  MACRO(89, ARG)            \
+  MACRO(90, ARG)            \
+  MACRO(91, ARG)            \
+  MACRO(92, ARG)            \
+  MACRO(93, ARG)            \
+  MACRO(94, ARG)            \
+  MACRO(95, ARG)            \
+  MACRO(96, ARG)            \
+  MACRO(97, ARG)            \
+  MACRO(98, ARG)            \
+  MACRO(99, ARG)            \
+  MACRO(100, ARG)           \
+  MACRO(101, ARG)           \
+  MACRO(102, ARG)           \
+  MACRO(103, ARG)           \
+  MACRO(104, ARG)           \
+  MACRO(105, ARG)           \
+  MACRO(106, ARG)           \
+  MACRO(107, ARG)           \
+  MACRO(108, ARG)           \
+  MACRO(109, ARG)           \
+  MACRO(110, ARG)           \
+  MACRO(111, ARG)           \
+  MACRO(112, ARG)           \
+  MACRO(113, ARG)           \
+  MACRO(114, ARG)           \
+  MACRO(115, ARG)
 
-#define __MARK(I)             item (FEAT_TRAINS, x##I, I) {}
-#define __ARR(I)              x##I,
-#define MARK_WAGONS_TO_SORT() FORLOOP(__MARK)
-#define WAGONS_ARRAY()        [ FORLOOP(__ARR) ]
+#define __ARR(I, _)            x##I,
+#define __MARK(I, _)           item (FEAT_TRAINS, x##I, I) {}
+#define __DISABLE_CARGO(I, ID) item (FEAT_TRAINS, x##I, I) {  \
+  property {                                                  \
+    cargo_disallow_refit: [ ID ];                             \
+  }                                                           \
+}
+
+#define WAGONS_ARRAY()         [ FORLOOP(__ARR, 0) ]
+#define MARK_WAGONS_TO_SORT()  FORLOOP(__MARK, 0)
+#define DISABLE_CARGO(ID)      FORLOOP(__DISABLE_CARGO, ID)
 
 #define APPLY_TO_ALL_RAILS(NMLID, INGAMEID, PROPERTIES) \
 item (FEAT_TRAINS, rail_##NMLID, INGAMEID) {            \
@@ -227,6 +234,82 @@ if (climate != CLIMATE_TOYLAND) {
     APPLY_TO_ALL_RAILS(food, 38, {
       name: string(STR_WAGON_NAME_REFRIGERATOR_VAN);
     })
+  }
+
+  if (!isPassengersCargoOn) {
+    DISABLE_CARGO(0x00)
+  }
+
+  if (!isMailCargoOn) {
+    DISABLE_CARGO(0x02)
+  }
+
+  if (!isValuablesCargoOn) {
+    DISABLE_CARGO(0x0A)
+  }
+
+  if (!isGoldCargoOn) {
+    DISABLE_CARGO(0x11)
+  }
+
+  if (!isDiamondsCargoOn) {
+    DISABLE_CARGO(0x0F)
+  }
+
+  if (!isCoalCargoOn) {
+    DISABLE_CARGO(0x01)
+  }
+
+  if (!isCopperCargoOn) {
+    DISABLE_CARGO(0x0D)
+  }
+
+  if (!isIronCargoOn) {
+    DISABLE_CARGO(0x08)
+  }
+
+  if (!isSteelCargoOn) {
+    DISABLE_CARGO(0x0C)
+  }
+
+  if (!isPaperCargoOn) {
+    DISABLE_CARGO(0x10)
+  }
+
+  if (!isWoodCargoOn) {
+    DISABLE_CARGO(0x07)
+  }
+
+  if (!isGoodsCargoOn) {
+    DISABLE_CARGO(0x05)
+  }
+
+  if (!isOilCargoOn) {
+    DISABLE_CARGO(0x03)
+  }
+
+  if (!isRubberCargoOn) {
+    DISABLE_CARGO(0x12)
+  }
+
+  if (!isWaterCargoOn) {
+    DISABLE_CARGO(0x09)
+  }
+
+  if (!isFoodCargoOn) {
+    DISABLE_CARGO(0x0B)
+  }
+
+  if (!isFruitCargoOn) {
+    DISABLE_CARGO(0x0E)
+  }
+
+  if (!isGrainCargoOn) {
+    DISABLE_CARGO(0x06)
+  }
+
+  if (!isLivestockCargoOn) {
+    DISABLE_CARGO(0x04)
   }
 
   MARK_WAGONS_TO_SORT()
