@@ -16,16 +16,23 @@ disable_item(FEAT_TRAINS, GAMEID);      \
 disable_item(FEAT_TRAINS, GAMEID + 30); \
 disable_item(FEAT_TRAINS, GAMEID + 62); \
 
-#define BOOL(N, BIT, FLAG, NAME, DEF_VALUE) \
-param N {                                   \
-  FLAG {                                    \
-    name: string(STR_PARAM_NAME_##NAME);    \
-    desc: string(STR_PARAM_DESC_##NAME);    \
-    type: bool;                             \
-    bit: BIT;                               \
-    def_value: DEF_VALUE;                   \
-  }                                         \
+#define __BOOL(N, BIT, FLAG, NAME, DESC, DEF_VALUE) \
+param N {                                           \
+  FLAG {                                            \
+    name: string(STR_PARAM_NAME_##NAME);            \
+    desc: string(STR_PARAM_DESC_##DESC);            \
+    type: bool;                                     \
+    bit: BIT;                                       \
+    def_value: DEF_VALUE;                           \
+  }                                                 \
 }
+
+#define BOOL(N, BIT, FLAG, NAME, DEF_VALUE) \
+  __BOOL(N, BIT, FLAG, NAME, NAME, DEF_VALUE)
+
+#define CARGOBOOL(N, BIT, FLAG, NAME, DEF_VALUE) \
+  __BOOL(N, BIT, FLAG, NAME, CARGO, DEF_VALUE)
+
 
 grf {
   grfid: "\01\16M\00";
@@ -54,6 +61,25 @@ grf {
   }
 
   BOOL(2, 1, isRenameOn, RENAME, 0)
+  CARGOBOOL(3, 2, isPassengersCargoOn, PASSENGERS_CARGO, 1)
+  CARGOBOOL(4, 3, isMailCargoOn, MAIL_CARGO, 1)
+  CARGOBOOL(5, 4, isValuablesCargoOn, VALUABLES_CARGO, 1)
+  CARGOBOOL(6, 5, isGoldCargoOn, GOLD_CARGO, 1)
+  CARGOBOOL(7, 6, isDiamondsCargoOn, DIAMONDS_CARGO, 1)
+  CARGOBOOL(8, 7, isCoalCargoOn, COAL_CARGO, 1)
+  CARGOBOOL(9, 8, isCopperCargoOn, COPPER_ORE_CARGO, 1)
+  CARGOBOOL(10, 9, isIronCargoOn, IRON_ORE_CARGO, 1)
+  CARGOBOOL(11, 10, isSteelCargoOn, STEEL_CARGO, 1)
+  CARGOBOOL(12, 11, isPaperCargoOn, PAPER_CARGO, 1)
+  CARGOBOOL(13, 12, isWoodCargoOn, WOOD_CARGO, 1)
+  CARGOBOOL(14, 13, isGoodsCargoOn, GOODS_CARGO, 1)
+  CARGOBOOL(15, 14, isOilCargoOn, OIL_CARGO, 1)
+  CARGOBOOL(16, 15, isRubberCargoOn, RUBBER_CARGO, 1)
+  CARGOBOOL(17, 16, isWaterCargoOn, WATER_CARGO, 1)
+  CARGOBOOL(18, 17, isFoodCargoOn, FOOD_CARGO, 1)
+  CARGOBOOL(19, 18, isFruitCargoOn, FRUIT_CARGO, 1)
+  CARGOBOOL(20, 19, isGrainCargoOn, GRAIN_CARGO, 1)
+  CARGOBOOL(21, 20, isLivestockCargoOn, LIVESTOCK_CARGO, 1)
 }
 
 if (grf_future_status("OG+1")) {
