@@ -16,21 +16,21 @@ STR_PARAM_REEFER_DEFAULT :Depending on climate (separate on sub-arctic, otherwis
 STR_PARAM_SEPARATE       :Separate railwagons
 STR_PARAM_SINGLE_WAGON   :Single refrigerator van
 
-STR_PARAM_WAGON_PASSENGER_CAR                 :Passenger Carriage
-STR_PARAM_WAGON_MAIL_VAN                      :Mail Van
-STR_PARAM_WAGON_COAL_CAR                      :Coal Truck
-STR_PARAM_WAGON_OIL_TANKER                    :Oil Tanker
-STR_PARAM_WAGON_LIVESTOCK_VAN                 :Livestock Van
-STR_PARAM_WAGON_GOODS_VAN                     :Goods Van
-STR_PARAM_WAGON_GRAIN_HOPPER                  :Grain Hopper
-STR_PARAM_WAGON_WOOD_TRUCK                    :Wood Truck
-STR_PARAM_WAGON_IRON_ORE_HOPPER               :Iron Ore Hopper
-STR_PARAM_WAGON_STEEL_TRUCK                   :Steel Truck
-STR_PARAM_WAGON_ARMORED_VAN                   :Armoured Van
-STR_PARAM_WAGON_FOOD_VAN                      :Food Van
-STR_PARAM_WAGON_PAPER_TRUCK                   :Paper Truck
-STR_PARAM_WAGON_COPPER_ORE_HOPPER             :Copper Ore Hopper
-STR_PARAM_WAGON_WATER_TANKER                  :Water Tanker
-STR_PARAM_WAGON_FRUIT_TRUCK                   :Fruit Truck
-STR_PARAM_WAGON_RUBBER_TRUCK                  :Rubber Truck
-STR_WAGON_NAME_REFRIGERATOR_VAN       :Refrigerator Van
+STR_PARAM_WAGON27_NAME           :Passenger Carriage
+STR_PARAM_WAGON28_NAME           :Mail Van
+STR_PARAM_WAGON29_NAME           :Coal Truck
+STR_PARAM_WAGON30_NAME           :Oil Tanker
+STR_PARAM_WAGON31_NAME           :Livestock Van
+STR_PARAM_WAGON32_NAME           :Goods Van
+STR_PARAM_WAGON33_NAME           :Grain Hopper
+STR_PARAM_WAGON34_NAME           :Wood Truck
+STR_PARAM_WAGON35_NAME           :Iron Ore Hopper
+STR_PARAM_WAGON36_NAME           :Steel Truck
+STR_PARAM_WAGON37_NAME           :Armoured Van
+STR_PARAM_WAGON38_NAME           :Food Van
+STR_PARAM_WAGON39_NAME           :Paper Truck
+STR_PARAM_WAGON40_NAME           :Copper Ore Hopper
+STR_PARAM_WAGON41_NAME           :Water Tanker
+STR_PARAM_WAGON42_NAME           :Fruit Truck
+STR_PARAM_WAGON43_NAME           :Rubber Truck
+STR_WAGON_NAME_REFRIGERATOR_VAN  :Refrigerator Van
