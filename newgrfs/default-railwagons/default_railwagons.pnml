@@ -1,90 +1,44 @@
-#define FORLOOP(MACRO, ARG) \
-  MACRO(27, ARG)            \
-  MACRO(28, ARG)            \
-  MACRO(29, ARG)            \
-  MACRO(30, ARG)            \
-  MACRO(31, ARG)            \
-  MACRO(32, ARG)            \
-  MACRO(33, ARG)            \
-  MACRO(34, ARG)            \
-  MACRO(35, ARG)            \
-  MACRO(36, ARG)            \
-  MACRO(37, ARG)            \
-  MACRO(38, ARG)            \
-  MACRO(39, ARG)            \
-  MACRO(40, ARG)            \
-  MACRO(41, ARG)            \
-  MACRO(42, ARG)            \
-  MACRO(43, ARG)            \
-  MACRO(44, ARG)            \
-  MACRO(45, ARG)            \
-  MACRO(46, ARG)            \
-  MACRO(47, ARG)            \
-  MACRO(48, ARG)            \
-  MACRO(49, ARG)            \
-  MACRO(50, ARG)            \
-  MACRO(51, ARG)            \
-  MACRO(52, ARG)            \
-  MACRO(53, ARG)            \
-  MACRO(57, ARG)            \
-  MACRO(58, ARG)            \
-  MACRO(59, ARG)            \
-  MACRO(60, ARG)            \
-  MACRO(61, ARG)            \
-  MACRO(62, ARG)            \
-  MACRO(63, ARG)            \
-  MACRO(64, ARG)            \
-  MACRO(65, ARG)            \
-  MACRO(66, ARG)            \
-  MACRO(67, ARG)            \
-  MACRO(68, ARG)            \
-  MACRO(69, ARG)            \
-  MACRO(70, ARG)            \
-  MACRO(71, ARG)            \
-  MACRO(72, ARG)            \
-  MACRO(73, ARG)            \
-  MACRO(74, ARG)            \
-  MACRO(75, ARG)            \
-  MACRO(76, ARG)            \
-  MACRO(77, ARG)            \
-  MACRO(78, ARG)            \
-  MACRO(79, ARG)            \
-  MACRO(80, ARG)            \
-  MACRO(81, ARG)            \
-  MACRO(82, ARG)            \
-  MACRO(83, ARG)            \
-  MACRO(89, ARG)            \
-  MACRO(90, ARG)            \
-  MACRO(91, ARG)            \
-  MACRO(92, ARG)            \
-  MACRO(93, ARG)            \
-  MACRO(94, ARG)            \
-  MACRO(95, ARG)            \
-  MACRO(96, ARG)            \
-  MACRO(97, ARG)            \
-  MACRO(98, ARG)            \
-  MACRO(99, ARG)            \
-  MACRO(100, ARG)           \
-  MACRO(101, ARG)           \
-  MACRO(102, ARG)           \
-  MACRO(103, ARG)           \
-  MACRO(104, ARG)           \
-  MACRO(105, ARG)           \
-  MACRO(106, ARG)           \
-  MACRO(107, ARG)           \
-  MACRO(108, ARG)           \
-  MACRO(109, ARG)           \
-  MACRO(110, ARG)           \
-  MACRO(111, ARG)           \
-  MACRO(112, ARG)           \
-  MACRO(113, ARG)           \
-  MACRO(114, ARG)           \
-  MACRO(115, ARG)
+#define __FORLOOP(MACRO, J, ARG) \
+  MACRO(27, J, ARG)              \
+  MACRO(28, J, ARG)              \
+  MACRO(29, J, ARG)              \
+  MACRO(30, J, ARG)              \
+  MACRO(31, J, ARG)              \
+  MACRO(32, J, ARG)              \
+  MACRO(33, J, ARG)              \
+  MACRO(34, J, ARG)              \
+  MACRO(35, J, ARG)              \
+  MACRO(36, J, ARG)              \
+  MACRO(37, J, ARG)              \
+  MACRO(38, J, ARG)              \
+  MACRO(39, J, ARG)              \
+  MACRO(40, J, ARG)              \
+  MACRO(41, J, ARG)              \
+  MACRO(42, J, ARG)              \
+  MACRO(43, J, ARG)              \
+  MACRO(44, J, ARG)              \
+  MACRO(45, J, ARG)              \
+  MACRO(46, J, ARG)              \
+  MACRO(47, J, ARG)              \
+  MACRO(48, J, ARG)              \
+  MACRO(49, J, ARG)              \
+  MACRO(50, J, ARG)              \
+  MACRO(51, J, ARG)              \
+  MACRO(52, J, ARG)              \
+  MACRO(53, J, ARG)
 
-#define __ARR(I, _)            x##I,
-#define __MARK(I, _)           item (FEAT_TRAINS, x##I, I) {}
-#define WAGONS_ARRAY()         [ FORLOOP(__ARR, 0) ]
-#define MARK_WAGONS_TO_SORT()  FORLOOP(__MARK, 0)
+#define BIGLOOP(MACRO, ARG)  \
+  __FORLOOP(MACRO, 0, ARG)   \
+  __FORLOOP(MACRO, 30, ARG)  \
+  __FORLOOP(MACRO, 62, ARG)  \
+
+#define SMALLLOOP(MACRO, ARG) \
+  __FORLOOP(MACRO, 0, ARG)
+
+#define __ARR(I, J, _)         x##I##J,
+#define __MARK(I, J, _)        item (FEAT_TRAINS, x##I##J, I + J) {}
+#define WAGONS_ARRAY()         [ BIGLOOP(__ARR, 0) ]
+#define MARK_WAGONS_TO_SORT()  BIGLOOP(__MARK, 0)
 
 #define APPLY_TO_ALL_RAILS(NMLID, INGAMEID, PROPERTIES) \
 item (FEAT_TRAINS, rail_##NMLID, INGAMEID) {            \
