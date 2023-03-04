@@ -15,12 +15,21 @@ STR_PARAM_REEFER_DEFAULT :Zależnie od klimatu (oddzielnie w klimacie arktycznym
 STR_PARAM_SEPARATE       :Oddzielne wagony
 STR_PARAM_SINGLE_WAGON   :Jeden wagon chłodniczy
 
-STR_PARAM_COAL_CAR                    :Wagon na węgiel
-STR_PARAM_LIVESTOCK_VAN               :Wagon na żywiec
-STR_PARAM_IRON_ORE_HOPPER             :Wagon na rudę żelaza
-STR_PARAM_STEEL_TRUCK                 :Wagon na stal
-STR_PARAM_PAPER_TRUCK                 :Wagon na papier
-STR_PARAM_COPPER_ORE_HOPPER           :Wagon na rudę miedzi
-STR_PARAM_WATER_TANKER                :Cysterna na wodę
-STR_PARAM_RUBBER_TRUCK                :Wagon na kauczuk
+STR_PARAM_WAGON_PASSENGER_CAR                 :Wagon pasażerski
+STR_PARAM_WAGON_MAIL_VAN                      :Wagon pocztowy
+STR_PARAM_WAGON_COAL_CAR                      :Wagon na węgiel
+STR_PARAM_WAGON_OIL_TANKER                    :Cysterna na ropę
+STR_PARAM_WAGON_LIVESTOCK_VAN                 :Wagon na żywiec
+STR_PARAM_WAGON_GOODS_VAN                     :Wagon towarowy
+STR_PARAM_WAGON_GRAIN_HOPPER                  :Wagon na ziarno
+STR_PARAM_WAGON_WOOD_TRUCK                    :Wagon na drewno
+STR_PARAM_WAGON_IRON_ORE_HOPPER               :Wagon na rudę żelaza
+STR_PARAM_WAGON_STEEL_TRUCK                   :Wagon na stal
+STR_PARAM_WAGON_ARMORED_VAN                   :Wagon opancerzony
+STR_PARAM_WAGON_FOOD_VAN                      :Wagon na żywność
+STR_PARAM_WAGON_PAPER_TRUCK                   :Wagon na papier
+STR_PARAM_WAGON_COPPER_ORE_HOPPER             :Wagon na rudę miedzi
+STR_PARAM_WAGON_WATER_TANKER                  :Cysterna na wodę
+STR_PARAM_WAGON_FRUIT_TRUCK                   :Wagon na owoce
+STR_PARAM_WAGON_RUBBER_TRUCK                  :Wagon na kauczuk
 STR_WAGON_NAME_REFRIGERATOR_VAN       :Wagon chłodniczy

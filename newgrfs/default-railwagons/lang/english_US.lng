@@ -6,9 +6,16 @@ STR_PARAM_NAME_RENAME    :Rename food boxcar to refrigerated boxcar
 STR_PARAM_REEFER_DEFAULT :Depending on climate (separate on sub-arctic, otherwise a refrigerated boxcar)
 STR_PARAM_SINGLE_WAGON   :Single refrigerated boxcar
 
-STR_PARAM_COAL_CAR                    :Coal Hopper
-STR_PARAM_LIVESTOCK_VAN               :Livestock Boxcar
-STR_PARAM_STEEL_TRUCK                 :Steel Car
-STR_PARAM_PAPER_TRUCK                 :Paper Car
-STR_PARAM_RUBBER_TRUCK                :Rubber Gondola
+STR_PARAM_WAGON_PASSENGER_CAR                 :Passenger Car
+STR_PARAM_WAGON_MAIL_VAN                      :Mail Car
+STR_PARAM_WAGON_COAL_CAR                      :Coal Hopper
+STR_PARAM_WAGON_LIVESTOCK_VAN                 :Livestock Boxcar
+STR_PARAM_WAGON_GOODS_VAN                     :Goods Car
+STR_PARAM_WAGON_WOOD_TRUCK                    :Wood Car
+STR_PARAM_WAGON_STEEL_TRUCK                   :Steel Car
+STR_PARAM_WAGON_ARMORED_VAN                   :Armored Boxcar
+STR_PARAM_WAGON_FOOD_VAN                      :Food Boxcar
+STR_PARAM_WAGON_PAPER_TRUCK                   :Paper Car
+STR_PARAM_WAGON_FRUIT_TRUCK                   :Fruit Gondola
+STR_PARAM_WAGON_RUBBER_TRUCK                  :Rubber Gondola
 STR_WAGON_NAME_REFRIGERATOR_VAN       :Refrigerated Boxcar
