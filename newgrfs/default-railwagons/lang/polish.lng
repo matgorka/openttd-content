@@ -32,4 +32,5 @@ STR_PARAM_WAGON40_NAME           :Wagon na rudę miedzi
 STR_PARAM_WAGON41_NAME           :Cysterna na wodę
 STR_PARAM_WAGON42_NAME           :Wagon na owoce
 STR_PARAM_WAGON43_NAME           :Wagon na kauczuk
+STR_PARAM_WAGON_DESC             :Wyłącza/włącza dostępność wagonu
 STR_WAGON_NAME_REFRIGERATOR_VAN  :Wagon chłodniczy

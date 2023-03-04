@@ -33,4 +33,5 @@ STR_PARAM_WAGON40_NAME           :Copper Ore Hopper
 STR_PARAM_WAGON41_NAME           :Water Tanker
 STR_PARAM_WAGON42_NAME           :Fruit Truck
 STR_PARAM_WAGON43_NAME           :Rubber Truck
+STR_PARAM_WAGON_DESC             :Disables/enables the availability of a railwagon
 STR_WAGON_NAME_REFRIGERATOR_VAN  :Refrigerator Van
