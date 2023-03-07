@@ -1,21 +1,8 @@
 ##grflangid 0x00
-STR_GRF_DESC             :An OpenGFX+ Industries fix, adds default food boxcars and fruit gondolas (from sub-arctic and sub-tropical climates) to the temperate climate. Restores grain hoppers to sub-arctic and sub-tropical climates.{}{}License: {WHITE}ISC
-STR_PARAM_DESC_BUGFIX    :Adds default food boxcars and fruit gondolas (from sub-arctic and sub-tropical climates) to the temperate climate. Restores grain hoppers to sub-arctic and sub-tropical climates (without the fix wheat and corn are stored in coal and copper ore hoppers respectively).
-STR_PARAM_NAME_SEPARATE  :Food boxcars and fruit gondolas
-STR_PARAM_NAME_RENAME    :Rename food boxcar to refrigerated boxcar
-STR_PARAM_REEFER_DEFAULT :Depending on climate (separate on sub-arctic, otherwise a refrigerated boxcar)
-STR_PARAM_SINGLE_WAGON   :Single refrigerated boxcar
-
-STR_PARAM_WAGON27_NAME           :Passenger Car
-STR_PARAM_WAGON28_NAME           :Mail Car
-STR_PARAM_WAGON29_NAME           :Coal Hopper
-STR_PARAM_WAGON31_NAME           :Livestock Boxcar
-STR_PARAM_WAGON32_NAME           :Goods Car
-STR_PARAM_WAGON34_NAME           :Wood Car
-STR_PARAM_WAGON36_NAME           :Steel Car
-STR_PARAM_WAGON37_NAME           :Armored Boxcar
-STR_PARAM_WAGON38_NAME           :Food Boxcar
-STR_PARAM_WAGON39_NAME           :Paper Car
-STR_PARAM_WAGON42_NAME           :Fruit Gondola
-STR_PARAM_WAGON43_NAME           :Rubber Gondola
+STR_GRF_DESC                     :An OpenGFX+ Industries fix, adds default food boxcars and fruit gondolas (from sub-arctic and sub-tropical climates) to the temperate climate. Restores grain hoppers to sub-arctic and sub-tropical climates.{}{}License: {WHITE}ISC
+STR_PARAM_DESC_BUGFIX            :Adds default food boxcars and fruit gondolas (from sub-arctic and sub-tropical climates) to the temperate climate. Restores grain hoppers to sub-arctic and sub-tropical climates (without the fix wheat and corn are stored in coal and copper ore hoppers respectively).
+STR_PARAM_NAME_SEPARATE          :Food boxcars and fruit gondolas
+STR_PARAM_NAME_RENAME            :Rename food boxcar to refrigerated boxcar
+STR_PARAM_REEFER_DEFAULT         :Depending on climate (separate on sub-arctic, otherwise a refrigerated boxcar)
+STR_PARAM_SINGLE_WAGON           :Single refrigerated boxcar
 STR_WAGON_NAME_REFRIGERATOR_VAN  :Refrigerated Boxcar

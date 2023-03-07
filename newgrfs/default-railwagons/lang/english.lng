@@ -1,37 +1,15 @@
 ##grflangid 0x01
-STR_GRF_NAME             :Default railwagons
-STR_GRF_DESC             :An OpenGFX+ Industries fix, adds default food vans and fruit trucks (from sub-arctic and sub-tropical climates) to the temperate climate. Restores grain hoppers to sub-arctic and sub-tropical climates.{}{}Licence: {WHITE}ISC
-STR_GRF_URL              :https://github.com/matgorka/openttd-content/tree/master/newgrfs/default-railwagons/
-STR_ERR_OGPT             :{YELLOW}OpenGFX+ Trains{WHITE} and {YELLOW}Default railwagons{WHITE} don't work too well together
-STR_PARAM_NAME_BUGFIX    :Apply bugfix
-STR_PARAM_DESC_BUGFIX    :Adds default food vans and fruit trucks (from sub-arctic and sub-tropical climates) to the temperate climate. Restores grain hoppers to sub-arctic and sub-tropical climates (without the fix wheat and maize are stored in coal trucks and copper ore hoppers respectively).
-STR_PARAM_NAME_SEPARATE  :Food vans and fruit trucks
-STR_PARAM_DESC_SEPARATE  :Set this parameter to change how food and fruits are stored in railwagons. "Climate-dependent" means this GRF won't interfere with how they are stored.
-STR_PARAM_NAME_RENAME    :Rename food van to refrigerator van
-STR_PARAM_DESC_RENAME    :{RED}Warning:{BLACK} this setting uses a translation defined in this GRF. Not all languages are supported. To check the list of supported languages you can look into the "readme" file.
-STR_PARAM_DEFAULT        :Depending on climate
-STR_PARAM_ENABLED        :Enabled
-STR_PARAM_DISABLED       :Disabled
-STR_PARAM_REEFER_DEFAULT :Depending on climate (separate on sub-arctic, otherwise a refrigerator van)
-STR_PARAM_SEPARATE       :Separate railwagons
-STR_PARAM_SINGLE_WAGON   :Single refrigerator van
-
-STR_PARAM_WAGON27_NAME           :Passenger Carriage
-STR_PARAM_WAGON28_NAME           :Mail Van
-STR_PARAM_WAGON29_NAME           :Coal Truck
-STR_PARAM_WAGON30_NAME           :Oil Tanker
-STR_PARAM_WAGON31_NAME           :Livestock Van
-STR_PARAM_WAGON32_NAME           :Goods Van
-STR_PARAM_WAGON33_NAME           :Grain Hopper
-STR_PARAM_WAGON34_NAME           :Wood Truck
-STR_PARAM_WAGON35_NAME           :Iron Ore Hopper
-STR_PARAM_WAGON36_NAME           :Steel Truck
-STR_PARAM_WAGON37_NAME           :Armoured Van
-STR_PARAM_WAGON38_NAME           :Food Van
-STR_PARAM_WAGON39_NAME           :Paper Truck
-STR_PARAM_WAGON40_NAME           :Copper Ore Hopper
-STR_PARAM_WAGON41_NAME           :Water Tanker
-STR_PARAM_WAGON42_NAME           :Fruit Truck
-STR_PARAM_WAGON43_NAME           :Rubber Truck
-STR_PARAM_WAGON_DESC             :Disables/enables the availability of a railwagon
+STR_GRF_NAME                     :Default railwagons
+STR_GRF_DESC                     :An OpenGFX+ Industries fix, adds default food vans and fruit trucks (from sub-arctic and sub-tropical climates) to the temperate climate. Restores grain hoppers to sub-arctic and sub-tropical climates.{}{}Licence: {WHITE}ISC
+STR_GRF_URL                      :https://github.com/matgorka/openttd-content/tree/master/newgrfs/default-railwagons/
+STR_ERR_OGPT                     :{YELLOW}OpenGFX+ Trains{WHITE} and {YELLOW}Default railwagons{WHITE} don't work too well together
+STR_PARAM_NAME_BUGFIX            :Apply bugfix
+STR_PARAM_DESC_BUGFIX            :Adds default food vans and fruit trucks (from sub-arctic and sub-tropical climates) to the temperate climate. Restores grain hoppers to sub-arctic and sub-tropical climates (without the fix wheat and maize are stored in coal trucks and copper ore hoppers respectively).
+STR_PARAM_NAME_SEPARATE          :Food vans and fruit trucks
+STR_PARAM_DESC_SEPARATE          :Set this parameter to change how food and fruits are stored in railwagons. "Climate-dependent" means this GRF won't interfere with how they are stored.
+STR_PARAM_NAME_RENAME            :Rename food van to refrigerator van
+STR_PARAM_DESC_RENAME            :{RED}Warning:{BLACK} this setting uses a translation defined in this GRF. Not all languages are supported. To check the list of supported languages you can look into the "readme" file.
+STR_PARAM_REEFER_DEFAULT         :Depending on climate (separate on sub-arctic, otherwise a refrigerator van)
+STR_PARAM_SEPARATE               :Separate railwagons
+STR_PARAM_SINGLE_WAGON           :Single refrigerator van
 STR_WAGON_NAME_REFRIGERATOR_VAN  :Refrigerator Van

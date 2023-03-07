@@ -1,36 +1,14 @@
 ##grflangid 0x30
-STR_GRF_NAME             :Domyślne wagony
-STR_GRF_DESC             :Poprawka do OpenGFX+ Industries, dodaje domyślne wagony na żywność i owoce do klimatu umiarkowanego (z klimatów subarktycznego i subtropikalnego). Przywraca wagony na ziarno do klimatów subarktycznego i subtropikalnego.{}{}Licencja: {WHITE}ISC
-STR_ERR_OGPT             :{YELLOW}OpenGFX+ Trains{WHITE} i {YELLOW}Domyślne wagony{WHITE} nie działają zbyt dobrze razem
-STR_PARAM_NAME_BUGFIX    :Zastosuj poprawki
-STR_PARAM_DESC_BUGFIX    :Dodaje domyślne wagony na żywność i owoce do klimatu umiarkowanego (z klimatów subarktycznego i subtropikalnego). Przywraca wagony na ziarno do klimatów subarktycznego i subtropikalnego (bez poprawki pszenica i kukurydza są przechowywane kolejno w wagonach na węgiel i miedź).
-STR_PARAM_NAME_SEPARATE  :Wagony na żywność i owoce
-STR_PARAM_DESC_SEPARATE  :Ustaw ten parametr by zmienić sposób w jaki przechowywane są żywność i owoce w wagonach. "Zależne od klimatu" oznacza, że ten GRF nie wprowadzi żadnych zmian wobec ustawień domyślnych.
-STR_PARAM_NAME_RENAME    :Zmień nazwę wagonu na żywność na wagon chłodniczy
-STR_PARAM_DESC_RENAME    :{RED}Ostrzeżenie:{BLACK} to ustawienie używa tłumaczenia zdefiniowanego w tym GRFie. Nie wszystkie języki są obsługiwane. Dla sprawdzenia listy obsługiwanych języków możesz zajrzeć do pliku "readme".
-STR_PARAM_DEFAULT        :Zależnie od klimatu
-STR_PARAM_ENABLED        :Zawsze
-STR_PARAM_DISABLED       :Brak
-STR_PARAM_REEFER_DEFAULT :Zależnie od klimatu (oddzielnie w klimacie arktycznym, w przeciwnym razie wagon chłodniczy)
-STR_PARAM_SEPARATE       :Oddzielne wagony
-STR_PARAM_SINGLE_WAGON   :Jeden wagon chłodniczy
-
-STR_PARAM_WAGON27_NAME           :Wagon pasażerski
-STR_PARAM_WAGON28_NAME           :Wagon pocztowy
-STR_PARAM_WAGON29_NAME           :Wagon na węgiel
-STR_PARAM_WAGON30_NAME           :Cysterna na ropę
-STR_PARAM_WAGON31_NAME           :Wagon na żywiec
-STR_PARAM_WAGON32_NAME           :Wagon towarowy
-STR_PARAM_WAGON33_NAME           :Wagon na ziarno
-STR_PARAM_WAGON34_NAME           :Wagon na drewno
-STR_PARAM_WAGON35_NAME           :Wagon na rudę żelaza
-STR_PARAM_WAGON36_NAME           :Wagon na stal
-STR_PARAM_WAGON37_NAME           :Wagon opancerzony
-STR_PARAM_WAGON38_NAME           :Wagon na żywność
-STR_PARAM_WAGON39_NAME           :Wagon na papier
-STR_PARAM_WAGON40_NAME           :Wagon na rudę miedzi
-STR_PARAM_WAGON41_NAME           :Cysterna na wodę
-STR_PARAM_WAGON42_NAME           :Wagon na owoce
-STR_PARAM_WAGON43_NAME           :Wagon na kauczuk
-STR_PARAM_WAGON_DESC             :Wyłącza/włącza dostępność wagonu
+STR_GRF_NAME                     :Domyślne wagony
+STR_GRF_DESC                     :Poprawka do OpenGFX+ Industries, dodaje domyślne wagony na żywność i owoce do klimatu umiarkowanego (z klimatów subarktycznego i subtropikalnego). Przywraca wagony na ziarno do klimatów subarktycznego i subtropikalnego.{}{}Licencja: {WHITE}ISC
+STR_ERR_OGPT                     :{YELLOW}OpenGFX+ Trains{WHITE} i {YELLOW}Domyślne wagony{WHITE} nie działają zbyt dobrze razem
+STR_PARAM_NAME_BUGFIX            :Zastosuj poprawki
+STR_PARAM_DESC_BUGFIX            :Dodaje domyślne wagony na żywność i owoce do klimatu umiarkowanego (z klimatów subarktycznego i subtropikalnego). Przywraca wagony na ziarno do klimatów subarktycznego i subtropikalnego (bez poprawki pszenica i kukurydza są przechowywane kolejno w wagonach na węgiel i miedź).
+STR_PARAM_NAME_SEPARATE          :Wagony na żywność i owoce
+STR_PARAM_DESC_SEPARATE          :Ustaw ten parametr by zmienić sposób w jaki przechowywane są żywność i owoce w wagonach. "Zależne od klimatu" oznacza, że ten GRF nie wprowadzi żadnych zmian wobec ustawień domyślnych.
+STR_PARAM_NAME_RENAME            :Zmień nazwę wagonu na żywność na wagon chłodniczy
+STR_PARAM_DESC_RENAME            :{RED}Ostrzeżenie:{BLACK} to ustawienie używa tłumaczenia zdefiniowanego w tym GRFie. Nie wszystkie języki są obsługiwane. Dla sprawdzenia listy obsługiwanych języków możesz zajrzeć do pliku "readme".
+STR_PARAM_REEFER_DEFAULT         :Zależnie od klimatu (oddzielnie w klimacie arktycznym, w przeciwnym razie wagon chłodniczy)
+STR_PARAM_SEPARATE               :Oddzielne wagony
+STR_PARAM_SINGLE_WAGON           :Jeden wagon chłodniczy
 STR_WAGON_NAME_REFRIGERATOR_VAN  :Wagon chłodniczy
