@@ -15,17 +15,7 @@
   MACRO(40, J, ARG)              \
   MACRO(41, J, ARG)              \
   MACRO(42, J, ARG)              \
-  MACRO(43, J, ARG)              \
-  MACRO(44, J, ARG)              \
-  MACRO(45, J, ARG)              \
-  MACRO(46, J, ARG)              \
-  MACRO(47, J, ARG)              \
-  MACRO(48, J, ARG)              \
-  MACRO(49, J, ARG)              \
-  MACRO(50, J, ARG)              \
-  MACRO(51, J, ARG)              \
-  MACRO(52, J, ARG)              \
-  MACRO(53, J, ARG)
+  MACRO(43, J, ARG)
 
 #define BIGLOOP(MACRO, ARG)  \
   __FORLOOP(MACRO, 0, ARG)   \
@@ -58,6 +48,24 @@ disable_item(FEAT_TRAINS, INGAMEID);      \
 disable_item(FEAT_TRAINS, INGAMEID + 30); \
 disable_item(FEAT_TRAINS, INGAMEID + 62); \
 
+#define ENABLE_ON_ALL_RAILS(INGAMEID, _, __) \
+APPLY_TO_ALL_RAILS(x##INGAMEID, INGAMEID, {  \
+  climates_available: ALL_CLIMATES;          \
+})
+
+#define ENABLED  1
+#define DISABLED 2
+#define SET_DEFAULT(ID, VALUE)   \
+if (param[ID - 24] == 0) {       \
+  param[ID - 24] = VALUE;        \
+}
+
+#define CONDITIONALLY_DISABLE(I, _, __) \
+if (isWagon##I##On == DISABLED) {       \
+  DISABLE_ON_ALL_RAILS(I)               \
+}
+
+
 #define __BOOL(N, FLAG, NAME, DESC, DEF_VALUE) \
 param N {                                      \
   FLAG {                                       \
@@ -71,6 +79,24 @@ param N {                                      \
 
 #define BOOL(N, FLAG, NAME, DEF_VALUE) \
   __BOOL(N, FLAG, NAME, NAME, DEF_VALUE)
+
+#define WAGON_PARAM(ID, _, __)                \
+param ID - 24 {                               \
+  isWagon##ID##On {                           \
+    name: string(STR_PARAM_WAGON##ID##_NAME); \
+    desc: string(STR_PARAM_WAGON_DESC);       \
+    type: int;                                \
+    def_value: 0;                             \
+    min_value: 0;                             \
+    max_value: 2;                             \
+                                              \
+    names: {                                  \
+      0: string(STR_PARAM_DEFAULT);           \
+      1: string(STR_PARAM_ENABLED);           \
+      2: string(STR_PARAM_DISABLED);          \
+    };                                        \
+  }                                           \
+}
 
 grf {
   grfid: "\01\16M\00";
@@ -99,6 +125,7 @@ grf {
   }
 
   BOOL(2, isRenameOn, RENAME, 0)
+  SMALLLOOP(WAGON_PARAM, 0)
 }
 
 if (grf_future_status("OG+1")) {
@@ -160,6 +187,48 @@ if (climate != CLIMATE_TOYLAND) {
     })
   }
 
+  SET_DEFAULT(27, ENABLED) // passengers
+  SET_DEFAULT(28, ENABLED) // mail
+  SET_DEFAULT(30, ENABLED) // oil
+  SET_DEFAULT(32, ENABLED) // goods
+  SET_DEFAULT(33, ENABLED) // grain
+  SET_DEFAULT(34, ENABLED) // wood
+  SET_DEFAULT(37, ENABLED) // valuables
+
+  if (climate == CLIMATE_TEMPERATE) {
+    SET_DEFAULT(35, ENABLED)  // iron
+    SET_DEFAULT(36, ENABLED)  // steel
+    SET_DEFAULT(38, DISABLED) // food
+  } else {
+    SET_DEFAULT(35, DISABLED) // iron
+    SET_DEFAULT(36, DISABLED) // steel
+    SET_DEFAULT(38, ENABLED)  // food
+  }
+
+  if (climate == CLIMATE_ARCTIC) {
+    SET_DEFAULT(39, ENABLED)  // paper
+  } else {
+    SET_DEFAULT(39, DISABLED) // paper
+  }
+
+  if (climate == CLIMATE_TROPICAL) {
+    SET_DEFAULT(29, DISABLED) // coal
+    SET_DEFAULT(31, DISABLED) // livestock
+    SET_DEFAULT(40, ENABLED)  // copper
+    SET_DEFAULT(41, ENABLED)  // water
+    SET_DEFAULT(42, ENABLED)  // fruit
+    SET_DEFAULT(43, ENABLED)  // rubber
+  } else {
+    SET_DEFAULT(29, ENABLED)  // coal
+    SET_DEFAULT(31, ENABLED)  // livestock
+    SET_DEFAULT(40, DISABLED) // copper
+    SET_DEFAULT(41, DISABLED) // water
+    SET_DEFAULT(42, DISABLED) // fruit
+    SET_DEFAULT(43, DISABLED) // rubber
+  }
+
+  SMALLLOOP(ENABLE_ON_ALL_RAILS, 0)
+  SMALLLOOP(CONDITIONALLY_DISABLE, 0)
   MARK_WAGONS_TO_SORT()
   sort(FEAT_TRAINS, WAGONS_ARRAY());
 }
