@@ -1,2 +1,2 @@
 ##grflangid 0x3d
-STR_PARAM_DESC_BUGFIX            :Adds default food vans and fruit trucks (from sub-arctic and sub-tropical climates) to the temperate climate. Restores grain hoppers to sub-arctic and sub-tropical climates (without the fix wheat and corn are stored in coal trucks and copper ore hoppers respectively).
+STR_PARAM_DESC_BUGFIX            :Adds default food vans and fruit trucks (from sub-arctic and sub-tropical climates) to the temperate climate. Restores grain hoppers to sub-arctic and sub-tropical climates (without the fix, wheat and corn are stored in coal trucks and copper ore hoppers, respectively).
