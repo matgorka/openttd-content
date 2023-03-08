@@ -5,17 +5,17 @@ Version: 1
 
 # Description
 
-An OpenGFX+ Industries fix, adds default food vans and fruit trucks (from sub-arctic and
+An OpenGFX+ Industries fix. Adds default food vans and fruit trucks (from sub-arctic and
 sub-tropical climates) to the temperate climate. Restores grain hoppers to sub-arctic and
-sub-tropical climates (without the fix wheat and maize are stored in coal trucks and copper
-ore hoppers respectively).
+sub-tropical climates (without the fix, wheat and maize are stored in coal trucks and copper
+ore hoppers, respectively).
 
 # Localization
 
-Unless the renaming option is on this NewGRF doesn't interfere with text data of railwagons
-therefore it won't cause any problems with localization - it supports all the languages that
-OpenTTD supports by default. If renaming option is on the following languages are supported
-for refrigerated wagons:
+Unless the renaming option is on, this NewGRF doesn't interfere with the text data of
+railwagons, therefore it won't cause any problems with localization; it supports all the
+languages that OpenTTD supports by default. If the renaming option is selected, the following
+languages are supported for refrigerated wagons:
  - Arabic (Egypt)
  - Bulgarian
  - Chinese (Traditional)
@@ -50,7 +50,7 @@ for refrigerated wagons:
  - Turkish
  - Ukrainian
 
-I took the translations from OpenGFX+ Trains 0.3.0 for following languages:
+I took the translations from OpenGFX+ Trains 0.3.0 for the following languages:
  - Chinese (Traditional)
  - Croatian
  - Dutch
