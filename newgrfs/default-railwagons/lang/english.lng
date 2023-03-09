@@ -1,7 +1,7 @@
 ##grflangid 0x01
 STR_GRF_NAME                     :Default railwagons
 STR_GRF_DESC                     :An OpenGFX+ Industries fix. Adds default food vans and fruit trucks (from sub-arctic and sub-tropical climates) to the temperate climate. Restores grain hoppers to sub-arctic and sub-tropical climates.{}{}Author: {WHITE}matgorka{}{BLACK}Version: {WHITE}1{}{BLACK}Licence: {WHITE}ISC
-STR_GRF_URL                      :https://github.com/matgorka/openttd-content/tree/master/newgrfs/default-railwagons/README.md
+STR_GRF_URL                      :https://github.com/matgorka/openttd-content/tree/master/newgrfs/default-railwagons/
 STR_ERR_OGPT                     :{YELLOW}OpenGFX+ Trains{WHITE} and {YELLOW}Default railwagons{WHITE} don't work too well together
 STR_PARAM_NAME_BUGFIX            :Apply bugfix
 STR_PARAM_DESC_BUGFIX            :Adds default food vans and fruit trucks (from sub-arctic and sub-tropical climates) to the temperate climate. Restores grain hoppers to sub-arctic and sub-tropical climates (without the fix, wheat and maize are stored in coal trucks and copper ore hoppers, respectively).
