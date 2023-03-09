@@ -5,6 +5,8 @@
 
 [License](license.txt)
 
+[Repository](.)
+
 ## How to compile
 
 1. You need to have NMLC and a C compiler installed (actually C preprocessor is enough)
