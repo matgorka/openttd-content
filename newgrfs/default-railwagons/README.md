@@ -2,9 +2,8 @@
 ## Links
 
 [NewGRF's Readme](readme.txt)
+
 [License](license.txt)
-Download source code
-Download binary
 
 ## How to compile
 
